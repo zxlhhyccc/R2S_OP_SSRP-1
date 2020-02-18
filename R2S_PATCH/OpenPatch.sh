@@ -36,6 +36,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/simple-obfs packa
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray-plugin package/lean/v2ray-plugin
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/srelay package/lean/srelay
 sed -i 's,$(STAGING,#$(STAGING,g' package/lean/v2ray-plugin/Makefile
+#订阅转换
+svn co https://github.com/QiuSimons/subconverter_op/trunk/subconverter_op_aarch64 package/new/openwrt-subconverter
 #清理内存
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ramfree package/lean/luci-app-ramfree
 #打印机
@@ -83,6 +85,8 @@ bash convert_translation.sh
 git clone -b master --single-branch https://github.com/QiuSimons/addition-trans-zh package/lean/lean-translate
 chmod -R 755 ./
 #生成默认配置及缓存
+rm -rf .config
+mv r2.config .congig
 make defconfig
 exit 0
 
