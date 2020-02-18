@@ -88,7 +88,7 @@ git clone -b master --single-branch https://github.com/QiuSimons/addition-trans-
 chmod -R 755 ./
 #生成默认配置及缓存
 rm -rf .config
-mv R2.config .congig
+mv R2.config .config
 make defconfig
 exit 0
 
