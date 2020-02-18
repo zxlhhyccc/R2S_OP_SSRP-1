@@ -37,7 +37,9 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray-plugin pack
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/srelay package/lean/srelay
 sed -i 's,$(STAGING,#$(STAGING,g' package/lean/v2ray-plugin/Makefile
 #订阅转换
-svn co https://github.com/QiuSimons/subconverter_op/trunk/subconverter_op_aarch64 package/new/openwrt-subconverter
+svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/subconverter package/new/subconverter
+svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/jpcre2 package/new/jpcre2
+svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rapidjson package/new/rapidjson
 #清理内存
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ramfree package/lean/luci-app-ramfree
 #打印机
