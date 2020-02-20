@@ -56,10 +56,7 @@ svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/n
 git clone -b master --single-branch https://github.com/tty228/luci-app-serverchan package/new/luci-app-serverchan
 #SmartDNS
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt package/new/smartdns/smart-op
-svn co https://github.com/pymumu/smartdns/trunk/package/luci package/new/smartdns/smart-luci
-pushd package/new/smartdns/smart-luci
-wget https://raw.githubusercontent.com/project-openwrt/openwrt/b6e1adff00f7c3450e28e3c7455151076e10c614/package/ntlf9t/luci-app-smartdns/Makefile
-popd
+svn co https://github.com/QiuSimons/luci-app-smartdns/trunk package/new/smartdns/smart-luci
 #上网APP过滤
 git clone -b master --single-branch https://github.com/destan19/OpenAppFilter package/new/OpenAppFilter
 #FullCone补丁
