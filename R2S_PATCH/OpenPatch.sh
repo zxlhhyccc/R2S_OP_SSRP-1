@@ -56,6 +56,8 @@ svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/n
 git clone -b master --single-branch https://github.com/tty228/luci-app-serverchan package/new/luci-app-serverchan
 #SmartDNS
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt package/new/smartdns/smart-op
+rm -f ./package/new/smartdns/smart-op/blacklist-ip.conf
+wget -P ./package/new/smartdns/smart-op https://github.com/QiuSimons/Others/raw/master/blacklist-ip.conf
 svn co https://github.com/QiuSimons/luci-app-smartdns/trunk package/new/smartdns/smart-luci
 #上网APP过滤
 git clone -b master --single-branch https://github.com/destan19/OpenAppFilter package/new/OpenAppFilter
