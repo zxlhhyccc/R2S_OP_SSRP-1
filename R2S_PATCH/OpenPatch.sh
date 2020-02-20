@@ -58,7 +58,7 @@ git clone -b master --single-branch https://github.com/tty228/luci-app-servercha
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt package/new/smartdns/smart-op
 svn co https://github.com/pymumu/smartdns/trunk/package/luci package/new/smartdns/smart-luci
 pushd package/new/smartdns/smart-luci
-wget https://raw.githubusercontent.com/pymumu/luci-app-smartdns/master/Makefile
+wget https://raw.githubusercontent.com/project-openwrt/openwrt/b6e1adff00f7c3450e28e3c7455151076e10c614/package/ntlf9t/luci-app-smartdns/Makefile
 popd
 #上网APP过滤
 git clone -b master --single-branch https://github.com/destan19/OpenAppFilter package/new/OpenAppFilter
