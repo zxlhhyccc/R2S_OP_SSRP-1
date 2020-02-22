@@ -80,12 +80,6 @@ if [ -f /sys/class/sunxi_info/sys_info ]; then
 fi
 
 # update /etc/config/network
-WAN_IF=`uci get network.wan.ifname`
-if [ "x${WAN_IF}" = "xeth0" ]; then
-	uci set network.wan.dns=8.8.8.8
-	uci commit
-fi
-
 WIFI_NUM=`find /sys/class/net/ -name wlan* | wc -l`
 if [ ${WIFI_NUM} -gt 0 ]; then
 
