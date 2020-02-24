@@ -26,6 +26,7 @@ sed -i 's,./scripts,#./scripts,g' scripts/mk-friendlywrt.sh
 #rm -rf ./Kernel_Patch_RK3328_5.4.y
 #cp -rf ./linux/. ./kernel
 #rm -rf ./linux
+sed -i 's,CONFIG_BPFILTER=y,CONFIG_BPFILTER=n,g' kernel/arch/arm64/configs/nanopi-r2_linux_defconfig
 pushd friendlywrt
 #bash OpenPatch.sh
 popd
