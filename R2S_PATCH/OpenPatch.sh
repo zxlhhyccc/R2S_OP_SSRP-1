@@ -15,8 +15,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ssr-plus
 sed -i 's/mux = 1/mux = 0/g' package/lean/luci-app-ssr-plus/root/usr/share/shadowsocksr/subscribe.lua
 rm -f ./package/lean/luci-app-ssr-plus/luasrc/model/cbi/shadowsocksr/client.lua
 wget -P ./package/lean/luci-app-ssr-plus/luasrc/model/cbi/shadowsocksr https://raw.githubusercontent.com/QiuSimons/SSR_PATCH/master/luasrc/model/cbi/shadowsocksr/client.lua
-rm -f ./package/lean/luci-app-ssr-plus/root/etc/init.d/shadowsocksr
-wget -P ./package/lean/luci-app-ssr-plus/root/etc/init.d https://raw.githubusercontent.com/QiuSimons/SSR_PATCH/master/root/etc/init.d/shadowsocksr
+#rm -f ./package/lean/luci-app-ssr-plus/root/etc/init.d/shadowsocksr
+#wget -P ./package/lean/luci-app-ssr-plus/root/etc/init.d https://raw.githubusercontent.com/QiuSimons/SSR_PATCH/master/root/etc/init.d/shadowsocksr
 rm -f ./package/lean/luci-app-ssr-plus/root/usr/share/shadowsocksr/genv2config.lua
 wget -P ./package/lean/luci-app-ssr-plus/root/usr/share/shadowsocksr https://raw.githubusercontent.com/QiuSimons/SSR_PATCH/master/root/usr/share/shadowsocksr/genv2config.lua
 rm -f ./package/lean/luci-app-ssr-plus/root/usr/share/shadowsocksr/genconfig_v2ray_s.lua
