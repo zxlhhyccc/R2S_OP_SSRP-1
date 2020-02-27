@@ -29,7 +29,6 @@ if [ "$DEVTYPE" = usb_device -a "$PRODUCT" = "12d1/14db/102" ]; then
 config interface 'wan'
         option proto 'dhcp'               
         option ifname 'eth_$MODULE'              
-        option dns '8.8.8.8'
 EOF
                 fi
                 /etc/init.d/network reload
