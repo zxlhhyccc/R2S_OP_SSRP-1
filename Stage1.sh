@@ -1,5 +1,7 @@
 #!/bin/bash
 clear
+git clone -b master https://github.com/QiuSimons/R2S_PATCH.git ./R2S_TMP
+cp -r ./R2S_TMP/. ./R2S_PATCH
 mkdir friendlywrt-rk3328
 pushd friendlywrt-rk3328
 repo init -u https://github.com/friendlyarm/friendlywrt_manifests -b master -m rk3328.xml --repo-url=https://github.com/friendlyarm/repo  --no-clone-bundle
