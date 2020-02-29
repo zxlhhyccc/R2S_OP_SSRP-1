@@ -18,7 +18,8 @@ tar zxvf ${latest_release}  --strip-components 1 -C ./friendlywrt-rk3328/friendl
 rm -f ./friendlywrt-rk3328/friendlywrt/feeds.conf.default
 wget -P friendlywrt-rk3328/friendlywrt/ https://raw.githubusercontent.com/openwrt/openwrt/openwrt-19.07/feeds.conf.default
 rm -f ${latest_release}
-cp -r ./R2S_PATCH/. ./friendlywrt-rk3328/friendlywrt
+rm -rf ./R2S_PATCH/.git
+cp -rf ./R2S_PATCH/. ./friendlywrt-rk3328/friendlywrt/
 cd friendlywrt-rk3328
 sed -i 's,./scripts,#./scripts,g' scripts/mk-friendlywrt.sh
 #git clone -b linux-5.4.y https://github.com/gregkh/linux.git
